@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eromosele | High-Impact Copy & Marketing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+/* Clash Display & Satoshi via CDN */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700&display=swap');
+
 :root {
   --bg: #080b12;
   --surface: #0e1320;
@@ -23,7 +26,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Satoshi', 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -45,8 +48,8 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .logo {
-  font-family: 'Syne', sans-serif;
-  font-weight: 800;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 0.06em;
   color: var(--white);
@@ -64,6 +67,7 @@ nav {
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: color 0.2s;
+  font-family: 'Satoshi', sans-serif;
 }
 .nav-links a:hover { color: var(--white); }
 .nav-cta {
@@ -72,9 +76,8 @@ nav {
   padding: 9px 22px;
   border-radius: 6px;
   font-weight: 700 !important;
-  color: var(--bg) !important;
 }
-.nav-cta:hover { background: #d9ff5a; color: var(--bg) !important; }
+.nav-cta:hover { background: #d9ff5a; }
 
 /* ── HERO ── */
 header {
@@ -87,7 +90,6 @@ header {
   overflow: hidden;
 }
 
-/* noise texture overlay */
 header::before {
   content: '';
   position: absolute;
@@ -97,7 +99,6 @@ header::before {
   opacity: 0.4;
 }
 
-/* glowing blobs */
 .blob {
   position: absolute;
   border-radius: 50%;
@@ -136,6 +137,7 @@ header::before {
   padding: 6px 14px;
   border-radius: 99px;
   margin-bottom: 32px;
+  font-family: 'Satoshi', sans-serif;
 }
 .hero-tag::before {
   content: '';
@@ -146,10 +148,10 @@ header::before {
 }
 
 header h1 {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  font-weight: 800;
-  line-height: 1.1;
+  font-family: 'Clash Display', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-weight: 700;
+  line-height: 1.08;
   letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: 28px;
@@ -177,6 +179,7 @@ header p {
   margin-bottom: 44px;
   font-weight: 300;
   line-height: 1.75;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .hero-actions {
@@ -195,6 +198,7 @@ header p {
   text-decoration: none;
   transition: transform 0.2s, background 0.2s;
   letter-spacing: 0.01em;
+  font-family: 'Satoshi', sans-serif;
 }
 .btn-primary:hover {
   background: #d9ff5a;
@@ -210,6 +214,7 @@ header p {
   border-radius: 8px;
   text-decoration: none;
   transition: border-color 0.2s, color 0.2s;
+  font-family: 'Satoshi', sans-serif;
 }
 .btn-ghost:hover {
   border-color: rgba(255,255,255,0.3);
@@ -226,21 +231,23 @@ header p {
   animation: fadeUp 1.1s 0.2s ease both;
 }
 .stat-num {
-  font-family: 'Syne', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: var(--white);
+  line-height: 1;
 }
 .stat-num span { color: var(--accent); }
 .stat-label {
-  font-size: 0.8rem;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 0.78rem;
   color: var(--muted);
-  margin-top: 2px;
+  margin-top: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
-/* ── MARQUEE ── */
+/* ── TICKER ── */
 .ticker {
   background: var(--accent);
   padding: 14px 0;
@@ -252,10 +259,10 @@ header p {
   animation: marquee 20s linear infinite;
 }
 .ticker-inner span {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
   font-size: 0.82rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--bg);
   padding: 0 32px;
@@ -273,21 +280,23 @@ header p {
   margin: 0 auto;
 }
 .section-label {
+  font-family: 'Satoshi', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 16px;
 }
 .services h2 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Clash Display', sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--white);
   max-width: 460px;
-  line-height: 1.2;
+  line-height: 1.15;
   margin-bottom: 64px;
+  letter-spacing: -0.02em;
 }
 .services-grid {
   display: grid;
@@ -327,16 +336,18 @@ header p {
   margin-bottom: 24px;
 }
 .service-card h3 {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--white);
   margin-bottom: 12px;
+  letter-spacing: -0.01em;
 }
 .service-card p {
+  font-family: 'Satoshi', sans-serif;
   color: var(--muted);
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .service-link {
   display: inline-flex;
@@ -344,15 +355,17 @@ header p {
   gap: 6px;
   margin-top: 20px;
   color: var(--accent);
+  font-family: 'Satoshi', sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-decoration: none;
   text-transform: uppercase;
+  transition: gap 0.2s;
 }
 .service-link:hover { gap: 10px; }
 
-/* ── HOW IT WORKS ── */
+/* ── PROCESS ── */
 .process {
   padding: 80px 60px 100px;
   background: var(--surface);
@@ -364,11 +377,12 @@ header p {
   margin: 0 auto;
 }
 .process h2 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Clash Display', sans-serif;
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--white);
   margin-bottom: 56px;
+  letter-spacing: -0.02em;
 }
 .steps {
   display: grid;
@@ -388,24 +402,26 @@ header p {
   font-size: 1.1rem;
 }
 .step-num {
-  font-family: 'Syne', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(200,240,74,0.12);
+  font-family: 'Clash Display', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(200,240,74,0.1);
   line-height: 1;
   margin-bottom: 16px;
 }
 .step h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Clash Display', sans-serif;
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white);
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 .step p {
-  font-size: 0.85rem;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 0.875rem;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 /* ── CTA ── */
@@ -420,19 +436,21 @@ header p {
   flex-wrap: wrap;
 }
 .cta-text h2 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Clash Display', sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--white);
-  line-height: 1.15;
+  line-height: 1.12;
   max-width: 560px;
   margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
 .cta-text h2 em {
   font-style: normal;
   color: var(--accent);
 }
 .cta-text p {
+  font-family: 'Satoshi', sans-serif;
   color: var(--muted);
   font-size: 1rem;
 }
@@ -450,6 +468,7 @@ footer {
 }
 footer .logo { font-size: 1rem; }
 footer p {
+  font-family: 'Satoshi', sans-serif;
   font-size: 0.78rem;
   color: var(--muted);
 }
@@ -499,7 +518,7 @@ footer p {
   <div class="hero-inner">
     <div class="hero-tag">Open for new projects</div>
     <h1>Copywriting, Design & Marketing That <em>Scales</em> Your Business</h1>
-    <p>The fastest and organic way to grow your business.</p>
+    <p>The fastest and most organic way to grow your business.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Scale My Business</a>
       <a href="#services" class="btn-ghost">See What We Do</a>
@@ -547,7 +566,7 @@ footer p {
     <div class="service-card">
       <div class="service-icon">🎨</div>
       <h3>Digital Design</h3>
-      <p> We design stunning visuals and digital assets that strengthen your brand presence and make every impression count.</p>
+      <p>We design stunning visuals and digital assets that strengthen your brand presence and make every impression count.</p>
       <a href="#contact" class="service-link">Get started →</a>
     </div>
     <div class="service-card">
@@ -568,7 +587,7 @@ footer p {
       <div class="step">
         <div class="step-num">01</div>
         <h3>Discovery Call</h3>
-        <p>We learn your goals, audience, and what's holding your growth back.</p>
+        <p>We learn your goals, audience, and what is holding your growth back.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
@@ -583,7 +602,7 @@ footer p {
       <div class="step">
         <div class="step-num">04</div>
         <h3>Growth</h3>
-        <p>You see results. We refine and scale what's working.</p>
+        <p>You see results. We refine and scale what is working.</p>
       </div>
     </div>
   </div>
@@ -593,9 +612,9 @@ footer p {
 <section class="cta-section" id="contact">
   <div class="cta-text">
     <h2>Ready to <em>transform</em> your business?</h2>
-    <p>Let's talk about your goals and build something that works.</p>
+    <p>Let us talk about your goals and build something that works.</p>
   </div>
-  <div class="cta-action" style="display: flex; gap: 16px; flex-wrap: wrap;">
+  <div class="cta-action" style="display:flex;gap:16px;flex-wrap:wrap;">
     <a href="mailto:thekyndrd@gmail.com" class="btn-primary">📧 Email Us</a>
     <a href="https://wa.me/2348111458346" class="btn-ghost">💬 WhatsApp</a>
   </div>
@@ -604,11 +623,8 @@ footer p {
 <!-- FOOTER -->
 <footer>
   <div class="logo">MOSELE<span style="color:var(--accent)">.</span></div>
+  <p>© 2025 Eromosele. All rights reserved.</p>
+</footer>
 
-  <p>© 2026 Eromosele Ltd. All rights
-
-
-
-
-
-
+</body>
+</html>
